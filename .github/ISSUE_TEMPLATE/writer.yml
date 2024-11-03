@@ -9,7 +9,8 @@ body:
         「XYZのテーマで執筆したいです」という執筆意思表示で利用するテーマです。
         意思表示を行うことで多方面から情報を集めたり、自信を奮い立たせるためにご利用ください。
 
-        ※ ZennのPublication未加入の場合はアサインテンプレートを用いてアサインリクエストを起票してください。🙏
+        ※1 関連するラベルが存在する場合はご自身で付けて頂けると助かります🙏
+        ※2 ZennのPublication未加入の場合はアサインテンプレートを用いてアサインリクエストを起票してください。🙏
   - type: input
     id: abstract
     attributes:
@@ -24,8 +25,6 @@ body:
       label: 詳細
       description: 書きたい記事に関する詳細を書いてください。
       placeholder: eg. xyzという背景があり、fooについて執筆したい。
-    validations:
-      required: true
   - type: textarea
     id: note
     attributes:
@@ -34,3 +33,12 @@ body:
         「nヶ月くらいで執筆完了の予定」「初学者向けである」など、執筆依頼に関する備考があれば記入してください。
 
       placeholder: 何かあれば
+  - type: textarea
+    id: review
+    attributes:
+      label: レビューの必要性
+      description: |
+        本コミュニティの特徴として公開前のレビューがございます。必要であれば @shinGangan の方でレビュー致します。
+        もし必要であれば @shinGangan へのメンションをお願い致します。
+    validations:
+      required: false
