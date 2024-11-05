@@ -1,1 +1,1 @@
-# comm_vue_nuxt
+# articles-zenn-plaza
